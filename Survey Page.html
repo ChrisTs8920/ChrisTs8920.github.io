@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Survey page.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="title">My Survey Form</h1>
+        <p id="description">Thank you for helping me improve the platform!</p>
+    </header>
+    <div>
+        <form id="survey-form" action="#" target="_blank">
+            <label for="name" id="name-label">Name:</label><br>
+            <input type="text" id="name" placeholder="Enter your name" required><br>
+            <label for="email" id="email-label">Email:</label><br>
+            <input type="email" id="email" placeholder="Enter your email" required><br>
+            <label for="number" id="number-label">Age (Optional):</label><br>
+            <input type="number" id="number" placeholder="Age" min="6" max="100"><br>
+            <label for="dropdown" id="dropdownl">What is your favorite feature on my site?</label><br>
+            <select id="dropdown">
+                <option value="Style">Style</option>
+                <option value="Simplicity">Simplicity</option>
+                <option value="Portability">Portability</option>
+            </select>
+            <p>Whould you recommend my site to a friend?</p>
+            <input type="radio" id="radio1" name="option" value="Definitely" checked>
+            <label for="radio1" id="radiol1">Definitely</label><br>
+            <input type="radio" id="radio2" name="option" value="Maybe">
+            <label for="radio2" id="radiol2">Maybe</label><br>
+            <input type="radio" id="radio3" name="option" value="Not sure">
+            <label for="radio3" id="radiol3">Not sure</label><br>
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <input type="checkbox" id="checkbox1" name="checkbox1" value="Style">
+            <label for="checkbox1" id="checkboxl1">Style</label><br>
+            <input type="checkbox" id="checkbox2" name="checkbox2" value="Dark mode">
+            <label for="checkbox2" id="checkboxl2">Dark mode</label><br>
+            <input type="checkbox" id="checkbox3" name="checkbox3" value="Accessibility">
+            <label for="checkbox3" id="checkboxl3">Accessibility</label><br><br><br>
+            <label for="comments" id="commentl">Additional comments:</label><br><br>
+            <textarea id="comments" name="comments" rows="5" cols="50"
+                placeholder="Enter your comment here..."></textarea><br><br>
+            <button id="submit">submit</button>
+        </form>
+        <p id="made">Made by Chris Tsouchlakhs</p>
+    </div>
+</body>
+
+</html>
